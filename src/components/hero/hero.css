@@ -1,0 +1,26 @@
+.big-box{
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.boxes-wrapper{
+    width: 100%;
+}
+.left-side{
+    width: 700px;
+}
+.right-side{
+    width: 700px;
+}
+@media screen and (max-width:746px) {
+    .big-box{
+        flex-direction: column;
+    }
+    .right-side{
+       width: 0;
+    }
+    .left-side{
+        width: 100%;
+    }
+}

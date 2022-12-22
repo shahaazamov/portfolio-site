@@ -1,0 +1,28 @@
+.img-wrapper{
+    margin-left: auto;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.real-img{
+    width: 250px;
+    object-fit: contain;
+    border:5px solid ;
+    border-radius: 50%;
+    padding:5px;
+     border-image-source:radial-gradient(45deg,#fbee97,#adedd5); 
+    border-image-slice: 1;
+    border-radius: 30% 70% 70% 30% / 20% 41% 59% 80% ;
+    transition: ease-out 0.3s all ;
+}
+.real-img:hover{
+    transform: scale(1.1);
+border-radius:58% 42% 63% 37% / 68% 65% 35% 32% ;
+}
+
+@media  (max-width:746px) {
+    .img-wrapper{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+}

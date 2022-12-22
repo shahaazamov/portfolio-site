@@ -1,0 +1,33 @@
+
+.container{
+    width: 100%;
+    max-width: 1380px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .doing-wrapper{
+    width: 100%;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+  .doing-text{
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 47.4px;
+    color:var(--text-color);
+    margin-bottom: 50px;
+  }
+
+
+  @media screen and (max-width:746px) {
+    .doing-text{
+        text-align: center;
+        font-size: 3.4rem;
+    }
+    .doing-wrapper{
+      width: 100%;
+  max-width: 500px;
+  }
+  }

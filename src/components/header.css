@@ -1,0 +1,241 @@
+.container{
+    width: 100%;
+    max-width: 1270px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    user-select: none;
+  }
+.header{
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.nav{
+display: flex;
+align-items:center;
+
+}
+
+.nav__logo{
+text-decoration: none;
+color:var(--text-color);
+font-size: 2rem;
+font-weight: 800;
+margin-right: auto;
+font-style: italic;
+line-height: 28.8px;
+transition: 0.3s ease;
+}
+.nav__logo:hover{
+    color:#313030;
+    opacity:0.7;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.nav__menu{
+display: flex;
+align-items:center;
+}
+.nav__list-grid{
+    display: flex;
+align-items:center;
+justify-content: space-between;
+}
+.nav__item{
+display: flex;
+align-items:center;
+justify-content: space-between;
+list-style-type: none;
+
+}
+.nav__item__link{
+    margin-left: 30px;
+    color:var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 28.8px;
+    transition: 0.3s ease ;
+}
+.nav__item__link:hover{
+    color:#22303C;
+    opacity:0.7;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.hidden{
+    display: none !important;
+}
+.FaBars{
+    display: block;
+    color:#fff;
+}
+@media  screen and (max-width:968px) {
+    .nav__menu{
+        display: none;
+    }
+    .FaBars{
+        display: block;
+        color:#fff;
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+/*  */
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--color-black);
+
+    padding: 1rem 2rem;
+}
+
+.app__navbar-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__navbar-logo img {
+    width: 150px;
+}
+
+.app__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    color:var(--text-color);
+    margin-left: auto;
+
+}
+
+.app__navbar-links li {
+    margin: 0 1rem;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color:#fff;
+}
+
+.app__navbar-links li:hover {
+    color: var(--color-grey);
+}
+
+.app__navbar-login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.app__navbar-login a {
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: .5s ease;
+    color:#fff;
+}
+a{
+
+    color:var(--text-color);
+}
+.app__navbar-login a:hover {
+    border-bottom: 1px solid var(--color-golden);
+}
+
+.app__navbar-login div {
+    width: 1px;
+    height: 30px;
+    background: var(--background-color);
+}
+
+.app__navbar-smallscreen {
+    display: none;
+}
+
+.app__navbar-smallscreen_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--background-color);
+    transition: .5s ease;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.app__navbar-smallscreen_overlay .overlay__close {
+    font-size: 27px;
+    color: var(--background-color);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.app__navbar-smallscreen_links {
+    list-style: none;
+    text-decoration: none;
+    margin-left: auto;
+
+}
+
+.app__navbar-smallscreen_links li {
+    margin: 2rem;
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+}
+a{
+    margin-left: auto;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+a:hover{
+    color:#22303C;
+    opacity:0.7;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.app__navbar-smallscreen_links li:hover {
+    color: var(--color-white);
+}
+
+@media screen and (min-width: 2000px) {
+    .app__navbar-logo img {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__navbar-links {
+        display: none;
+    }
+
+    .app__navbar-smallscreen {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__navbar {
+        padding: 1rem;
+    }
+
+    .app__navbar-login {
+        display: none;
+    }
+
+    .app__navbar-logo img {
+        width: 110px;
+    }
+}
